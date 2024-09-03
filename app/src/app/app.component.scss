@@ -9,9 +9,18 @@
 
     &__wrapper {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 42vw;
         height: 86vh;
         border-radius: 20px;
         background-color: rgba($color: #ffffff, $alpha: 0.2);
     }
+}
+
+app-calculator {
+    position: relative;
+    width: 92%;
+    height: 91.3%;
 }
