@@ -21,6 +21,12 @@
 
 app-calculator {
     position: relative;
-    width: 92%;
+    width: 90.99%;
     height: 91.3%;
+}
+
+@media (max-width: 600px) {
+    .page__wrapper {
+        width: 96%;
+    }
 }
