@@ -73,4 +73,30 @@ describe('CalculateService', () => {
     it('should evaluate expression with square root and percentage', () => {
         expect(service.evaluateExpression('\u221A 16 + 50%')).toBe(4.5)
     })
+
+    it('should handle very large numbers', () => {
+        expect(
+            service.evaluateExpression('9999999999999999 + 9999999999999999'),
+        ).toBe(19999999999999998)
+    })
+
+    it('should handle division of very small numbers', () => {
+        expect(
+            service.evaluateExpression('0.0000000000001 / 0.0000000000002'),
+        ).toBe(0.5)
+    })
+
+    it('should evaluate correctly with multiple parentheses', () => {
+        expect(service.evaluateExpression('(2 + (3 * (4 - 1)))')).toBe(11)
+    })
+
+    it('should evaluate correctly with mixed types of numbers', () => {
+        expect(service.evaluateExpression('2.5 + 3')).toBe(5.5)
+    })
+
+    it('should throw error for non-numeric characters', () => {
+        expect(() => service.evaluateExpression('2 + three')).toThrowError(
+            'Invalid expression',
+        )
+    })
 })

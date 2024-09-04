@@ -1,5 +1,6 @@
 .calculator {
-    height: 100%;
+    height: 800px;
+    width: 554px;
     &__container {
         font-family: 'Geometria', sans-serif;
         border-radius: 18px;
@@ -17,7 +18,7 @@
     }
 
     &__display {
-        height: 21.6vh;
+        height: 221px;
         font-size: 24px;
         text-align: right;
         display: flex;
@@ -27,10 +28,10 @@
     }
 
     &__input {
-        border: none;
+        border: none !important;
         background-color: transparent;
         width: 100%;
-        height: 11.4vh;
+        height: 117px;
         font-size: 24px;
         color: #f2f2f2;
         font-weight: 600;
@@ -40,36 +41,37 @@
         align-items: end;
 
         &:focus {
-            border: none;
+            border: none !important;
         }
     }
 
     &__result {
-        height: 7.43vh;
+        height: 76px;
         width: 100%;
         color: #f2f2f2;
         font-weight: bold;
-        font-size: 3.899vw;
+        font-size: 56px;
     }
 
     &__buttons {
         box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
-        gap: 1.8vw;
+        gap: 20px;
         justify-content: space-between;
-        height: 45.3vh;
-        margin-top: 1.88vw;
+        height: 464px;
+        width: 460px;
+        margin-top: 37px;
     }
 
     &__button {
         border: none;
-        width: 5.556vw;
-        height: 5.556vw;
+        width: 80px;
+        height: 80px;
         background-color: transparent;
         padding: 10px;
         border-radius: 100%;
-        font-size: 2.226vw;
+        font-size: 36px;
         color: #f2f2f2;
         cursor: pointer;
 
@@ -86,14 +88,27 @@
 
 @media (max-width: 600px) {
     .calculator {
+        height: 100%;
+        width: 100%;
         &__button {
             width: 50px;
             height: 50px;
             font-size: 30px;
         }
 
+        &__input {
+            height: 60px;
+        }
+
+        &__result {
+            height: 40px;
+        }
+
         &__buttons {
-            gap: 10px;
+            height: 100%;
+            width: 100%;
+            margin-top: 10px;
+            gap: 20px;
         }
 
         &__container {

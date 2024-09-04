@@ -21,11 +21,18 @@
 
 app-calculator {
     position: relative;
-    width: 90.99%;
-    height: 91.3%;
+    width: 616px;
+    height: 876px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 600px) {
+    app-calculator {
+        width: 90%;
+        height: 90%;
+    }
     .page__wrapper {
         width: 96%;
     }
