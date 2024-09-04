@@ -1,27 +1,43 @@
-# App
+## Калькулятор на Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+Калькулятор Angular - это простое веб-приложение для выполнения основных арифметических операций. Калькулятор на вход принимает строку с математическим выражением. Математическое выражение может состоять из операций сложения, вычитания, умножения, деления, извлечения квадратного корня и получения процента, а так же из круглых скобок. Математическое выражение может быть набрано как с клавиатуры, так и нажатием на соответствующие кнопки на калькуляторе. Вычисление выражения выполняется по нажатию на кнопку = калькулятора или на клавишу Enter клавиатуры. Математическое выражение удаляется при нажатии на клавиатуре клавиши Esc.
 
-## Development server
+### Установка
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Чтобы установить калькулятор Angular, выполните следующие шаги:
 
-## Code scaffolding
+1. Убедитесь, что у вас установлен Node.js (рекомендуется версия 12 или выше) и npm.
+2. Сколнируйте репозиторий
+3. Перейдите в каталог проекта CALC:
+cd calc
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. Установите зависимости:
+npm install
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Запуск Калькулятора
+Чтобы запустить калькулятор, выполните следующую команду:
+ng serve
 
-## Running unit tests
+Откройте браузер и перейдите по адресу http://localhost:4200, чтобы увидеть калькулятор.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Использование
 
-## Running end-to-end tests
+Для использования калькулятора введите следующее:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ Нажмите кнопки с цифрами, чтобы ввести операнды.
+ Нажмите кнопки с операциями (+, -, *, /, %), чтобы выбрать операцию.
+ Нажмите кнопку "=", чтобы вычислить результат.
 
-## Further help
+### Тестирование
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Для запуска тестов выполните следующую команду:
+
+ng test
+
+
+### Статический Анализ
+
+Для запуска статического анализа выполните следующую команду:
+
+ng lint

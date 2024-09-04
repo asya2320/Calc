@@ -23,6 +23,7 @@ export class CalculatorComponent {
     }
 
     onKeyPress(event: KeyboardEvent): void {
+        // eslint-disable-next-line no-useless-escape
         const allowedCharacters = /[0-9\(\)\+\-\*\/\%\,\s]/
 
         if (event.key === 'Enter') {

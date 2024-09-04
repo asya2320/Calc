@@ -77,7 +77,7 @@ describe('CalculateService', () => {
     it('should handle very large numbers', () => {
         expect(
             service.evaluateExpression('9999999999999999 + 9999999999999999'),
-        ).toBe(19999999999999998)
+        ).toBe(Number(19999999999999998n))
     })
 
     it('should handle division of very small numbers', () => {
