@@ -37,8 +37,8 @@
         font-weight: 600;
         text-align: right;
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-end;
+        align-items: flex-end;
 
         &:focus {
             border: none !important;
